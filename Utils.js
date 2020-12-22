@@ -19,11 +19,13 @@ module.exports.parseName = function (name) {
   return name.toLowerCase().replace(/\s/g, "")
 }
 
+const cancelArrayItem = ["Cancelar"]
+
 module.exports.mondayKeyboard = function () {
   return {
     "parse_mode": "Markdown",
     "reply_markup": {
-      "keyboard": [["Sinoceratops", "Indominus Rex"], ["Grypolyth", "Gorgotrebax"]]
+      "keyboard": [["Sinoceratops", "Indominus Rex"], ["Grypolyth", "Gorgotrebax"], cancelArrayItem]
     }
   }
 }
@@ -33,7 +35,7 @@ module.exports.tuesdayKeyboard = function () {
   return {
     "parse_mode": "Markdown",
     "reply_markup": {
-      "keyboard": [["Woolly Mammoth", "Mammotherium"], ["Stygidaryx", "Hadros Lux"]]
+      "keyboard": [["Woolly Mammoth", "Mammotherium"], ["Stygidaryx", "Hadros Lux"], cancelArrayItem]
     }
   }
 }
@@ -43,7 +45,7 @@ module.exports.wednesdayKeyboard = function () {
   return {
     "parse_mode": "Markdown",
     "reply_markup": {
-      "keyboard": [["Erlikogamma", "Pyrritator"], ["Indoraptor", "Mortem Rex"]]
+      "keyboard": [["Erlikogamma", "Pyrritator"], ["Indoraptor", "Mortem Rex"], cancelArrayItem]
     }
   }
 }
@@ -52,7 +54,7 @@ module.exports.thursdayKeyboard = function () {
   return {
     "parse_mode": "Markdown",
     "reply_markup": {
-      "keyboard": [["Tyrannosaurus Rex", "Megalosuchus"], ["Smilonemys", "Ceramagnus"]]
+      "keyboard": [["Tyrannosaurus Rex", "Megalosuchus"], ["Smilonemys", "Ceramagnus"], cancelArrayItem]
     }
   }
 }
