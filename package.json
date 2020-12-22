@@ -1,0 +1,16 @@
+{
+  "name": "jwastrategiesbot",
+  "version": "1.0.0",
+  "description": "Telegram bot for retrieve JWA Strategies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eliana Ferreira",
+  "license": "ISC",
+  "dependencies": {
+    "api-telegram-bot": "^6.0.5",
+    "node-telegram-bot-api": "^0.50.0",
+    "request": "^2.88.2"
+  }
+}
