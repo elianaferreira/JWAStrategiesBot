@@ -15,6 +15,10 @@ module.exports.isDinoName =  function (message) {
   return dinoNames.includes(message)
 }
 
+module.exports.parseName = function (name) {
+  return name.toLowerCase().replace(/\s/g, "")
+}
+
 module.exports.mondayKeyboard = function () {
   return {
     "parse_mode": "Markdown",
