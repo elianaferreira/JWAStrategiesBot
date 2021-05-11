@@ -35,7 +35,7 @@ module.exports.tuesdayKeyboard = function () {
   return {
     "parse_mode": "Markdown",
     "reply_markup": {
-      "keyboard": [["Woolly Mammoth", "Mammotherium"], ["Stygidaryx", "Hadros Lux"], ["Carnotaurus, Blue"], cancelArrayItem]
+      "keyboard": [["Woolly Mammoth", "Mammotherium"], ["Stygidaryx", "Hadros Lux"], ["Carnotaurus", "Blue"], cancelArrayItem]
     }
   }
 }
