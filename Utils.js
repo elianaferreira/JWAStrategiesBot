@@ -25,7 +25,8 @@ module.exports.mondayKeyboard = function () {
   return {
     "parse_mode": "Markdown",
     "reply_markup": {
-      "keyboard": [["Sinoceratops", "Indominus Rex"], ["Grypolyth", "Gorgotrebax"], cancelArrayItem]
+      "keyboard": [["Sinoceratops", "Indominus Rex"], ["Grypolyth", "Gorgotrebax"], cancelArrayItem],
+      "resize_keyboard": true
     }
   }
 }
@@ -35,7 +36,8 @@ module.exports.tuesdayKeyboard = function () {
   return {
     "parse_mode": "Markdown",
     "reply_markup": {
-      "keyboard": [["Woolly Mammoth", "Mammotherium"], ["Stygidaryx", "Hadros Lux"], ["Carnotaurus", "Blue"], cancelArrayItem]
+      "keyboard": [["Woolly Mammoth", "Mammotherium"], ["Stygidaryx", "Hadros Lux"], ["Carnotaurus", "Blue"], cancelArrayItem],
+      "resize_keyboard": true
     }
   }
 }
@@ -45,7 +47,8 @@ module.exports.wednesdayKeyboard = function () {
   return {
     "parse_mode": "Markdown",
     "reply_markup": {
-      "keyboard": [["Erlikogamma", "Pyrritator"], ["Indoraptor", "Mortem Rex"], cancelArrayItem]
+      "keyboard": [["Erlikogamma", "Pyrritator"], ["Indoraptor", "Mortem Rex"], cancelArrayItem],
+      "resize_keyboard": true
     }
   }
 }
@@ -54,7 +57,8 @@ module.exports.thursdayKeyboard = function () {
   return {
     "parse_mode": "Markdown",
     "reply_markup": {
-      "keyboard": [["Tyrannosaurus Rex", "Megalosuchus"], ["Smilonemys", "Meiolania"], ["Ceramagnus"], cancelArrayItem]
+      "keyboard": [["Tyrannosaurus Rex", "Megalosuchus"], ["Smilonemys", "Meiolania"], ["Ceramagnus"], cancelArrayItem],
+      "resize_keyboard": true
     }
   }
 }
