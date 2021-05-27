@@ -38,7 +38,8 @@ module.exports.tuesdayKeyboard = function () {
     "parse_mode": "Markdown",
     "reply_markup": {
       "keyboard": [["Woolly Mammoth", "Mammotherium"], ["Stygidaryx", "Hadros Lux"], ["Carnotaurus", "Blue"], cancelArrayItem],
-      "resize_keyboard": true
+      "resize_keyboard": true,
+      "one_time_keyboard": true
     }
   }
 }
@@ -49,7 +50,8 @@ module.exports.wednesdayKeyboard = function () {
     "parse_mode": "Markdown",
     "reply_markup": {
       "keyboard": [["Erlikogamma", "Pyrritator"], ["Indoraptor", "Mortem Rex"], cancelArrayItem],
-      "resize_keyboard": true
+      "resize_keyboard": true,
+      "one_time_keyboard": true
     }
   }
 }
@@ -59,7 +61,8 @@ module.exports.thursdayKeyboard = function () {
     "parse_mode": "Markdown",
     "reply_markup": {
       "keyboard": [["Tyrannosaurus Rex", "Megalosuchus"], ["Smilonemys", "Meiolania"], ["Ceramagnus"], cancelArrayItem],
-      "resize_keyboard": true
+      "resize_keyboard": true,
+      "one_time_keyboard": true
     }
   }
 }
