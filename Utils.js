@@ -49,7 +49,7 @@ module.exports.wednesdayKeyboard = function () {
   return {
     "parse_mode": "Markdown",
     "reply_markup": {
-      "keyboard": [["Erlikogamma", "Pyrritator"], ["Indoraptor", "Mortem Rex"], cancelArrayItem],
+      "keyboard": [["Erlikogamma", "Pyrritator"], ["Indoraptor", "Meiolania"], ["Mortem Rex"], cancelArrayItem],
       "resize_keyboard": true,
       "one_time_keyboard": true
     }
@@ -60,7 +60,7 @@ module.exports.thursdayKeyboard = function () {
   return {
     "parse_mode": "Markdown",
     "reply_markup": {
-      "keyboard": [["Tyrannosaurus Rex", "Megalosuchus"], ["Smilonemys", "Meiolania"], ["Ceramagnus"], cancelArrayItem],
+      "keyboard": [["Tyrannosaurus Rex", "Megalosuchus"], ["Smilonemys", "Ceramagnus"], cancelArrayItem],
       "resize_keyboard": true,
       "one_time_keyboard": true
     }
