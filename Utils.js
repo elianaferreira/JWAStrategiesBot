@@ -26,7 +26,8 @@ module.exports.mondayKeyboard = function () {
     "parse_mode": "Markdown",
     "reply_markup": {
       "keyboard": [["Sinoceratops", "Indominus Rex"], ["Grypolyth", "Gorgotrebax"], cancelArrayItem],
-      "resize_keyboard": true
+      "resize_keyboard": true,
+      "one_time_keyboard": true
     }
   }
 }
