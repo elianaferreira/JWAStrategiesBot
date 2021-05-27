@@ -1,4 +1,4 @@
-const dinoNames = ["Sinoceratops", "Indominus Rex", "Grypolyth", "Gorgotrebax", "Woolly Mammoth", "Mammotherium", "Stygidaryx", "Hadros Lux", "Carnotaurus", "Blue", "Erlikogamma", "Pyrritator", "Indoraptor", "Mortem Rex", "Tyrannosaurus Rex", "Megalosuchus", "Smilonemys", "Ceramagnus"]
+const dinoNames = ["Sinoceratops", "Indominus Rex", "Grypolyth", "Gorgotrebax", "Woolly Mammoth", "Mammotherium", "Stygidaryx", "Hadros Lux", "Carnotaurus", "Blue", "Erlikogamma", "Pyrritator", "Indoraptor", "Mortem Rex", "Tyrannosaurus Rex", "Megalosuchus", "Smilonemys", "Ceramagnus", "Meiolania"]
 
 
 module.exports.isDayMessage = function (message) {
@@ -54,7 +54,7 @@ module.exports.thursdayKeyboard = function () {
   return {
     "parse_mode": "Markdown",
     "reply_markup": {
-      "keyboard": [["Tyrannosaurus Rex", "Megalosuchus"], ["Smilonemys", "Ceramagnus"], cancelArrayItem]
+      "keyboard": [["Tyrannosaurus Rex", "Megalosuchus"], ["Smilonemys", "Meiolania"], ["Ceramagnus"], cancelArrayItem]
     }
   }
 }
