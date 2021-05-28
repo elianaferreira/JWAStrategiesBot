@@ -13,7 +13,8 @@ telegram = new TelegramBot(BOT_TOKEN, { polling: true })
 const dayKeyboard = {
   "parse_mode": "Markdown",
   "reply_markup": {
-    "keyboard": [["Lunes", "Martes"], ["Miercoles", "Jueves"], ["Viernes"]]
+    "keyboard": [["Lunes", "Martes"], ["Miercoles", "Jueves"], ["Viernes"]],
+    "resize_keyboard": true,
   }
 }
 
