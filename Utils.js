@@ -1,11 +1,12 @@
-const dinoNames = ["Sinoceratops", "Indominus Rex", "Grypolyth", "Gorgotrebax", "Woolly Mammoth", "Mammotherium", "Stygidaryx", "Hadros Lux", "Carnotaurus", "Blue", "Erlikogamma", "Pyrritator", "Indoraptor", "Mortem Rex", "Tyrannosaurus Rex", "Megalosuchus", "Smilonemys", "Ceramagnus", "Meiolania"]
+const dinoNames = ["Sinoceratops", "Indominus Rex", "Grypolyth", "Gorgotrebax", "Woolly Mammoth", "Mammotherium", "Stygidaryx", "Hadros Lux", "Carnotaurus", "Blue", "Erlikogamma", "Pyrritator", "Indoraptor", "Mortem Rex", "Tyrannosaurus Rex", "Megalosuchus", "Smilonemys", "Ceramagnus", "Meiolania", "Refrenantem"]
 
 
 module.exports.isDayMessage = function (message) {
   if (message.toLowerCase() == "lunes" ||
       message.toLowerCase() == "martes" ||
       message.toLowerCase() == "miercoles" ||
-      message.toLowerCase() == "jueves") {
+      message.toLowerCase() == "jueves" ||
+      message.toLowerCase() == "viernes") {
         return true
       }
   return false
@@ -61,6 +62,18 @@ module.exports.thursdayKeyboard = function () {
     "parse_mode": "Markdown",
     "reply_markup": {
       "keyboard": [["Tyrannosaurus Rex", "Megalosuchus"], ["Smilonemys", "Ceramagnus"], cancelArrayItem],
+      "resize_keyboard": true,
+      "one_time_keyboard": true
+    }
+  }
+}
+
+
+module.exports.fridayKeyboard = function () {
+  return {
+    "parse_mode": "Markdown",
+    "reply_markup": {
+      "keyboard": [["Refrenantem"], cancelArrayItem],
       "resize_keyboard": true,
       "one_time_keyboard": true
     }
