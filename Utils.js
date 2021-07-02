@@ -7,7 +7,8 @@ module.exports.isDayMessage = function (message) {
       message.toLowerCase() == "miercoles" ||
       message.toLowerCase() == "jueves" ||
       message.toLowerCase() == "viernes" || 
-      message.toLowerCase() == "sabado") {
+      message.toLowerCase() == "sabado" ||
+      message.toLowerCase() == "domingo") {
         return true
       }
   return false
