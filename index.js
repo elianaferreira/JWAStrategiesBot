@@ -13,7 +13,7 @@ telegram = new TelegramBot(BOT_TOKEN, { polling: true })
 const dayKeyboard = {
   "parse_mode": "Markdown",
   "reply_markup": {
-    "keyboard": [["Lunes", "Martes"], ["Miercoles", "Jueves"], ["Viernes", "Sabado"]],
+    "keyboard": [["Lunes", "Martes"], ["Miercoles", "Jueves"], ["Viernes", "Sabado"], ["Domingo"]],
     "resize_keyboard": true,
   }
 }
@@ -44,6 +44,9 @@ telegram.on("text", (message) => {
       telegram.sendMessage(message.chat.id, answerMsg, fridayKeyboard)
     } else if (text == "sabado") {
       const fridayKeyboard = utils.saturdayKeyboard()
+      telegram.sendMessage(message.chat.id, answerMsg, fridayKeyboard)
+    } else if (text == "domingo") {
+      const fridayKeyboard = utils.sundayKeyboard()
       telegram.sendMessage(message.chat.id, answerMsg, fridayKeyboard)
     }
     //is a boss
