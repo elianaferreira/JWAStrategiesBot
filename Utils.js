@@ -1,4 +1,4 @@
-const dinoNames = ["Postimetrodon", "Indominus Rex", "Grypolyth", "Gorgotrebax", "Woolly Mammoth", "Glyptoceras", "Stygidaryx", "Hadros Lux", "Carnotaurus", "Blue", "Megalotops", "Pyrritator", "Indoraptor", "Mortem Rex", "Tyrannosaurus Rex", "Scorpius Rex", "Smilonemys", "Ceramagnus", "Meiolania", "Refrenantem", "Bajadasaurus", "Haast Maximus", "Hydra Boa", "Megalonyx"]
+const dinoNames = ["Postimetrodon", "Indominus Rex", "Grypolyth", "Gorgotrebax", "Woolly Mammoth", "Glyptoceras", "Stygidaryx", "Hadros Lux", "Carnotaurus", "Blue", "Megalotops", "Rinchicyon", "Indoraptor", "Mortem Rex", "Tyrannosaurus Rex", "Scorpius Rex", "Smilonemys", "Ceramagnus", "Meiolania", "Refrenantem", "Bajadasaurus", "Haast Maximus", "Hydra Boa", "Megalonyx"]
 
 
 module.exports.isDayMessage = function (message) {
@@ -52,7 +52,7 @@ module.exports.wednesdayKeyboard = function () {
   return {
     "parse_mode": "Markdown",
     "reply_markup": {
-      "keyboard": [["Megalotops", "Pyrritator"], ["Indoraptor", "Meiolania"], ["Mortem Rex"], cancelArrayItem],
+      "keyboard": [["Megalotops", "Rinchicyon"], ["Indoraptor", "Meiolania"], ["Mortem Rex"], cancelArrayItem],
       "resize_keyboard": true,
       "one_time_keyboard": true
     }
