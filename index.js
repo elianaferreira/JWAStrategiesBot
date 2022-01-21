@@ -22,6 +22,7 @@ const dayKeyboard = {
 
 telegram.on("text", (message) => {
   if (!utils.isDayMessage(message.text) && !utils.isDinoName(message.text)) {
+    telegram.sendMessage(message.chat.id, "Mi creadora dejó el juego, por lo que para versiones del juego superiores a la 2.12.31 puede que las estrategias y/o jefes no correspondan.")
     telegram.sendMessage(message.chat.id, "Seleccione un día", dayKeyboard);
 	} else {
     const text = message.text.toLowerCase()
